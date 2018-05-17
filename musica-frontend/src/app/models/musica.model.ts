@@ -1,7 +1,10 @@
 export class Musica {
-    public id: String
-    public nome: String
-    public artista: String
-    public artistaId: String
+    public artista:{
+        id: string
+        nome: string    
+    }            
+    public artistaId: string
+    public id: string
+    public nome: string
     public checked: Boolean;
 }

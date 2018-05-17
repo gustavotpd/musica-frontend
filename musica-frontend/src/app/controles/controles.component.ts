@@ -16,7 +16,7 @@ export class ControlesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.musicaListaControle)
+    //console.log(this.musicaListaControle)
   }
 
 }

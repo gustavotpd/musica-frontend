@@ -14,7 +14,7 @@ export class MusicaComponent implements OnInit {
   @Input() @Output() musicas: Musica[]
 
   ngOnInit() {
-    console.log(this.musicas)
+    //console.log(this.musicas)
   }
 
   checkedMusic(musica: Musica){

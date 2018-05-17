@@ -1,0 +1,11 @@
+  input {
+    padding:10px;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+
+  .form-rounded {
+    border-radius: 1rem;
+    }
