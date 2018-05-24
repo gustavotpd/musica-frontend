@@ -9,17 +9,9 @@ import { Musica } from '../models/musica.model';
   styleUrls: ['./topo.component.css']
 })
 export class TopoComponent implements OnInit {
-  
   @Output() topoMusicSearch = new EventEmitter();
   @Output() topoPlaylistSearch = new EventEmitter();
-  
   constructor() { }
-
-  public musicas:Musica[];
-  
-
-  ngOnInit() {
-
-
-  }
+  public musicas: Musica[];
+  ngOnInit() {}
 }

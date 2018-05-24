@@ -1,9 +1,9 @@
 import { Playlist } from './playlist.model';
 import { Usuario } from './usuario.model';
-export class PlaylistResponse{
-    public id: string
-    public playlistMusicas: Playlist[]
-    public usuario: Usuario
+export class PlaylistResponse {
+    public id: string;
+    public playlistMusicas: Playlist[];
+    public usuario: Usuario;
 }
 
 // {

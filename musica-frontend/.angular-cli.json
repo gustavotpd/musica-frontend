@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "musica-frontend"
+    "name": "musica-frontend",
+    "ejected": false
   },
   "apps": [
     {
@@ -20,11 +21,13 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-        ],
-        "scripts": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../src/assets/icon.css"
+
+      ],
+      "scripts": [
         "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-        ],
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -58,6 +61,7 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+    }
   }
 }

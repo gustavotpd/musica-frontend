@@ -1,6 +1,6 @@
 import { PlaylistResponse } from './../models/playlistResponse.model';
 import { Playlist } from './../models/playlist.model';
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, Output } from '@angular/core';
 import { Musica } from '../models/musica.model';
 
 @Component({
@@ -8,21 +8,24 @@ import { Musica } from '../models/musica.model';
   templateUrl: './playlist.component.html',
   styleUrls: ['./playlist.component.css']
 })
-export class PlaylistComponent implements OnInit {
+export class PlaylistComponent implements OnInit, OnChanges {
 
   constructor() { }
 
-  @Input() playlist: PlaylistResponse
+  @Input() playlist: PlaylistResponse;
 
   ngOnInit() {
-    //console.log(this.playlist)
+    // console.log(this.playlist)
   }
 
-  checkedMusic(musica: Musica){
+  ngOnChanges() {
+    console.log('mudou');
+  }
+
+  checkedMusic(musica: Musica) {
     this.playlist.playlistMusicas.forEach(element => {
-      element.musica.checked = false      
+      element.musica.checked = false;
     });
     musica.checked = !musica.checked;
   }
-
 }
